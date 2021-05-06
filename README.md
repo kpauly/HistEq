@@ -6,6 +6,14 @@ to make a reproducible scientific project named
 
 It is authored by KPauly.
 
+Usage:
+
+    batch_histeq(target_path, source_dir, adjusted_dir)
+
+Adjusts images from the source folder to match the histogram of the target image,
+based on the Images.jl adjust_histogram function (Burger & Burge, 2016).
+Then writes images to the adjusted folder. Uses all threads available at startup.
+
 To (locally) reproduce this project, do the following:
 
 0. Download this code base. Notice that raw data are typically not included in the
